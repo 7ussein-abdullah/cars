@@ -1,0 +1,140 @@
+/* start content */
+
+
+.all-cars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.car-container{
+  width: 29%;
+  height: 350px;
+  text-align: center;
+  border: 1px solid #919191;
+  background-color: #fff;
+}
+
+.car-container:hover{
+  box-shadow: 0 0 5px #089da1;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.cars-mercedes{
+  padding: 30px 0;
+}
+
+.cars-mercedes h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-size: 45px;
+}
+
+.cars-Nissan,
+.cars-TOYOTA{
+  padding: 0 0 50px;
+}
+
+.cars-Nissan h1,
+.cars-Lexus h1,
+.cars-TOYOTA h1,
+.cont h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-size: 45px;
+}
+
+.cars-TOYOTA h1{
+  padding-top: 50px;
+}
+
+.specific{
+  margin-top: 30px;
+}
+/* end content */
+
+
+
+
+
+/* star services */
+
+
+.cont{
+  padding: 2% 15%;
+}
+
+.cont .row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 80px;
+}
+
+.cont .services{
+  text-align: center;
+  padding: 25px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #efefefae;
+}
+
+.cont .services i{
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #303ef7;
+}
+
+
+/* end services */
+
+/* star about */
+
+
+.about{
+  width: 100%;
+}
+
+.about .main{
+  width: 1130px;
+  margin-left: 180px;
+  display: flex;
+}
+
+.about img{
+  width: 40%;
+  height: 500px;
+}
+
+.about-text{
+  width: 40%;
+}
+
+.about-text h1,
+.cont h1{
+  font-size: 60px;
+  text-transform: capitalize;
+  margin-top: 45px;
+  margin-bottom: 55px;
+}
+
+.about-text h4{
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.about span{
+  color: #0dc8cf;
+}
+/* end about */
+
+
+

@@ -1,0 +1,130 @@
+body{
+    background:url(../image/mercedes.png);
+    background-position: center;
+    background-size: cover;
+    }
+
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 470px;
+    border-radius: 15px;
+    backdrop-filter: blur(17px);
+    box-sizing: content-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    color: #fff;
+}
+form:hover{
+    box-shadow: 3px 3px 40px #27415cc3;
+}
+
+.login{
+    position: absolute;
+    margin-top: 65px;
+    margin-left: 160px;
+}
+
+::placeholder{
+    color: #fff;
+    
+}
+:focus::placeholder{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+input[type="text"],[type="password"]{
+    position: absolute;
+    outline: none;
+    width: 300px;
+    height: 50px;
+    background: none;
+    padding: 20px;
+    color: #fff;
+    border-radius: 15px;
+}
+
+input[type="text"]{
+    top: 135px;
+    left: 50px;
+}
+
+input[type="password"]{
+    top: 210px;
+    left: 50px;
+}
+
+#iconface{
+    position: absolute;
+    top: 150;
+    left: 320;
+}
+
+#iconlock{
+    position: absolute;
+    top: 226;
+    left: 320;
+}
+
+.remember{
+    position: absolute;
+    top: 280px;
+    left: 55px;
+    font-size: 14px;
+}
+
+.forget{
+    position: absolute;
+    top: 280px;
+    left: 232px;
+    font-size: 14px;
+}
+
+input[value="Sign in"]{
+    position: absolute;
+    top: 322px;
+    left: 150px;
+    width: 100px;
+    height: 36px;
+    background: black;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 12px;
+    font-size: 17px;
+}
+
+.registration{
+    position: absolute;
+    top: 379;
+    left: 54px;
+    font-size: 13px;
+    text-transform:none;
+}
+.reg{
+    color: rgba(0, 0, 0, 0);
+}
+
+form ul{
+    position: absolute;
+    top: 405px;
+    left: 15px;
+    list-style: none;
+    display: flex;
+    font-size: 25px;
+}
+form ul li {
+    padding-right: 28.5px;
+}
+
+.remember:hover, 
+.forget:hover,
+form ul li a,
+.registration span,
+input[value="Sign in"]:hover{
+    color: #0077ff;
+}

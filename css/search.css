@@ -1,0 +1,102 @@
+section{
+  direction: rtl;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  position: relative;
+  width: 50%;
+  border-radius: 6px;
+  padding: 30px;
+  background-color: #fff;
+}
+
+.container .title{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  right: 10%;
+  font-size: 30px;
+  font-weight: 700;
+  border-bottom: 1px solid rgb(112, 108, 108);
+  padding: 10px;
+}
+
+.container form{
+  position: relative;
+  margin-top: 16px;
+  min-height: 490px;
+}
+
+.container form .innertitle{
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+.container form .fields{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container form .fields .input-fields{
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  margin: 10px 0;
+}
+
+.container form .fields .input-fields label{
+  font-size: 13px;
+}
+
+.container form .fields .input-fields input{
+  height: 40px;
+  margin: 8px 0;
+  border: 2px solid rgba(80, 80, 80, 0.5);
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(34, 150, 170, 0.3);
+}
+
+input[value="search"]{
+  position: absolute;
+  right: 25%;
+  top: 90%;
+  width: 50%;
+  height: 40px;
+  background: rgb(26, 28, 30);
+  border: none;
+  color: #fff;
+  border-radius: 12px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.MAP-PRAND h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-size: 45px;
+}
+
+.MAP-PRAND {
+  padding: 0 0 50px;
+}
+
+.imgmarc{
+  padding-left: 170px;
+  display: flex;
+  height: 700px;
+}
+
+.dashborad.active .imgmarc{
+  height: 650px;
+}

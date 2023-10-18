@@ -1,0 +1,352 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  display: grid;
+  grid-template-columns: 3.5vw auto;
+  height: 100%;
+  transition: 0.6s;
+  overflow-x: hidden;
+  background-color: rgba(121, 75, 59, 0.236);
+}
+
+/* star sidbar */
+
+body.active{
+  grid-template-columns: 13vw auto;
+  transition: 0.6s;
+}
+
+body .sidbar{
+  background-color: #eee;
+  padding-top: 60px;
+  box-shadow:  0 0 10px #000;
+}
+
+body .logosidbar,
+body .sidbar ul li span{
+  display: none;
+}
+
+body.active .logosidbar{
+  display: block;
+  margin-top: -105px;
+  margin-left: -20px;
+  text-align: center;
+  text-transform:uppercase; 
+  color: black;
+  padding-bottom: 20px;
+  position: fixed;
+}
+
+body.active .sidbar ul li span{
+  display: block;
+  color:black;
+}
+
+body .sidbar .btn{
+  margin-left: 21px;
+  border: none;
+  font-size: 15px;
+  position: fixed;
+  cursor: pointer;
+}
+
+body.active .sidbar .btn{
+  margin-left: 26px;
+  margin-top: 34px;
+  transition: 0.6s;
+}
+
+body .btn:hover{
+  color: red;
+}
+
+body .sidbar ul{
+  position: fixed;
+  margin-top: 28px;
+  transition: 0.8s;
+}
+
+body.active .sidbar ul{
+  margin-top: 50px;
+}
+
+body .sidbar ul li{ /* ابعد النقاط */
+  list-style: none;
+}
+
+body .sidbar ul li a{
+  display: flex;     /* فلكس علاسب اخليه يقبل بادينق من فوق وتحت وكذلك علاسب اضيف قاب (السطر الي تحت)*/
+  gap: 0.9vw;        /* اللنك الي فعلناه يتكون من جزئين الايقونة والكلام لذلك فعلنا قاب علاسب افعل مسافه بينهن */
+  padding: 15px 15px;
+  color: #0dc8cf;
+  text-decoration: none;  /* ابعد الخط الذي تحت */
+  border-left: 4px solid transparent;
+}
+
+body.active .sidbar ul li a{
+  padding: 20px 20px;
+}
+
+body .sidbar ul li a:hover{
+  border-color: #0077ff;
+  background-color: #ddd;
+  color: red;
+}
+
+body.active .sidbar ul li a:hover{
+  padding-left: 30px;
+}
+
+body .listcontact .fa-caret-down{
+  display: none;
+}
+
+body.active .listcontact .fa-caret-down{
+  display: block;
+  padding-left: 40px;
+}
+
+body .listcontact .menu{
+  display: none;
+}
+
+body.active .listcontact .menu.active{
+  display: flex;
+  list-style: none;
+  margin-top: -7px;
+  margin-left: -5px;
+  font-size: small;
+}
+
+/* end sidbar */
+/* ------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------- */
+/* star header */
+
+.header{
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  box-shadow:  0 0 10px #000;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.header .logomenu_bar{
+  color: #fff;
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+.header .logomenu_bar span{
+  color: #0dc8cf;
+}
+
+.header ul{
+  list-style: none;
+  display: flex;
+}
+
+.header ul li {
+  padding: 10px 30px;
+  position: relative;
+}
+
+.header ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.header ul li a:hover{
+  color: #0dc8cf;
+  border-bottom: 2px solid #0dc8cf;
+}
+
+.header .dropdown_menu {
+  display: none;
+}
+
+.header ul li:hover .dropdown_menu{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  box-shadow:  0 0 10px #000;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.header ul li:hover .dropdown_menu ul{
+  display: block;
+  margin: 10px;
+}
+
+.header ul li:hover .dropdown_menu ul li{
+  width: 120px;
+  padding: 10px;
+}
+
+.header .fa-caret-right,
+.header .fa-caret-down{
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+.dropdown_menu-1{
+  display: none;
+}
+
+.dropdown_menu ul li:hover .dropdown_menu-1{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 120px;
+  box-shadow:  0 0 10px #000;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* end header */
+/* ------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------- */
+/* start footer */
+
+footer{
+  background: linear-gradient(to right , #32383a , #130817);
+  color: #273237;
+  color: #fff;
+  padding: 50px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+footer .row{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+footer .col{
+  flex-basis: 25%;
+}
+
+footer .col:nth-child(2) , 
+footer .col:nth-child(3){
+  flex-basis: 15%;
+}
+
+footer .logofooter{
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+footer .logofooter span{
+  color: #0dc8cf;
+}
+
+footer .col h2{
+  width: fit-content;
+  margin-bottom: 30px ;
+  position: relative;
+}
+
+footer .email-id{
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+footer .links li{
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+footer .links li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.formfooter{
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+
+.formfooter .fa-arrow-right,
+.formfooter .fa-envelope{
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.formfooter input{
+  width: 100%;
+  background: transparent;
+  color: #fff;
+  border: 0;
+  outline: none;
+}
+
+.formfooter button{
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.formfooter button .fa-arrow-right{
+  font-size: 16px;
+  color: #fff;
+}
+
+.social-icons #followUS{
+  position: relative;
+  left: 120px;
+  bottom: 23px;
+  font-size: 17px;
+}
+
+.social-icons ul{
+  list-style: none;
+  display: flex;
+  font-size: 25px;
+  position: relative;
+  left: 25px;
+  bottom: 5px;
+}
+.social-icons ul li{
+  padding-right: 55px;
+  padding-bottom: 10px;
+}
+
+.social-icons ul li a{
+  color: #0dc8cf;
+}
+
+hr{
+  width: 90% auto;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  margin: 0 100px 10px;
+}
+
+.copyright{
+  text-align: center;
+  margin-bottom: -20px;
+}
+
+/* end footer */
